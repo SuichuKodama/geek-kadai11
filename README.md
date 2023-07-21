@@ -1,7 +1,7 @@
 # geek-kadai11
 
 project2の立ち上げ方
-docker compose up
+docker-compose up -d
 sail up -d
 ブラウザでlocalhost
 
