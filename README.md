@@ -1,9 +1,9 @@
 # geek-kadai11
 
 project2の立ち上げ方
+Dockerアプリ立ち上げ
 docker-compose up -d
 sail up -d
-ブラウザでlocalhost
 
 フロント立ち上げ（vite）
 npm i
