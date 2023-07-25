@@ -14,9 +14,23 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/index', [PostController::class, 'index']);
+Route::get(
+    '/sample',
+    [\App\Http\Controllers\Sample\IndexController::class,
+    'show']
+);
+
+Route::get(
+    '/sample/{id}',
+    [\App\Http\Controllers\Sample\IndexController::class,
+    'showId']
+);
+
+Route::get('/tweet', \App\Http\Controllers\Tweet\IndexController::class);
+
+
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('sample');
 });
 
