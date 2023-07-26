@@ -9,7 +9,7 @@ projectフォルダに移動して下記を打ち込む
 composer install
 sail up -d
 
-フロント立ち上げ（vite）
+Webサーバー用のドキュメントルート（vite）
 npm i
 npm run dev
 
@@ -34,3 +34,4 @@ npm run dev
   - Laravel SailをMacにインストールする手順を分かりやすく解説 (https://biz.addisteria.com/02laravel-sail/)
   - Laravelのルーティング(Routing)のまとめ！(https://codelikes.com/laravel-routing-summary/#toc1)
   - MVCの処理の流れ（簡単な実装例をもとに解説）(https://zenn.dev/souhal/articles/b07adc15209ab5)
+  - git pullコマンドを実行したらvendorのファイルが開けなくなってエラー(https://laraweb.net/practice/7129/)
