@@ -1,8 +1,12 @@
 # geek-kadai11
 
-projectの立ち上げ方
-Dockerアプリ立ち上げ
-docker-compose up -d
+[projectの立ち上げ方]
+
+Dockerアプリ立ち上げ 
+composerインストールしない場合は（Mac:）brew install composerコマンドでHomebrewでインストールする
+
+projectフォルダに移動して下記を打ち込む
+composer install
 sail up -d
 
 フロント立ち上げ（vite）
