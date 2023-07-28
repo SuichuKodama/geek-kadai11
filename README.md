@@ -34,4 +34,9 @@ npm run dev
   - Laravel SailをMacにインストールする手順を分かりやすく解説 (https://biz.addisteria.com/02laravel-sail/)
   - Laravelのルーティング(Routing)のまとめ！(https://codelikes.com/laravel-routing-summary/#toc1)
   - MVCの処理の流れ（簡単な実装例をもとに解説）(https://zenn.dev/souhal/articles/b07adc15209ab5)
+<<<<<<< Updated upstream
   - git pullコマンドを実行したらvendorのファイルが開けなくなってエラー(https://laraweb.net/practice/7129/)
+=======
+  - カラムを追加しても"INFO  Nothing to migrate."が表示される場合(https://qiita.com/sskre/items/0bd048744ea2f830682e)
+  - Laravelバリデーションルール(https://laravel.com/docs/9.x/validation#available-validation-rules)
+>>>>>>> Stashed changes
