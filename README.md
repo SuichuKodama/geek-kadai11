@@ -3,16 +3,25 @@
 [projectの立ち上げ方]
 
 Dockerアプリ立ち上げ
+
 composerインストールしない場合は（Mac:）brew
+
 install composerコマンドでHomebrewでインストールする
 
+
 projectフォルダに移動して下記を打ち込む
+
 composer install
+
 sail up -d
 
+
 Webサーバー用のドキュメントルート（vite）
+
 npm i
+
 npm run dev
+
 
 ## ①課題内容（どんな作品か）
 
