@@ -19,8 +19,7 @@ class DeleteController extends Controller
             throw new NotFoundHttpException('存在しないつぶやきです');
         }
         $tweet->delete();
-        return redirect()
-            ->route('tweet.index')
+        return redirect(route('tweet.index'))
             ->with('feedback.success', "つぶやきを削除しました");
     }
 }

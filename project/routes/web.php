@@ -42,7 +42,7 @@ Route::delete('/tweet/delete/{tweetId}', \App\Http\Controllers\Tweet\DeleteContr
 ->name('tweet.delete');
 
 
-Route::get('/', function () {
-    return view('sample');
-});
+// Route::get('/', function () {
+//     return view('sample');
+// });
 

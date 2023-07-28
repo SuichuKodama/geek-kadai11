@@ -1,0 +1,236 @@
+body {
+  position: relative;
+}
+
+input[type="radio"] {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  position: relative;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+input[type="radio"]::before, input[type="radio"]::after{
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+input[type="radio"]::before {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .6);
+  height: 14px;
+  width: 14px;
+}
+input[type="radio"]::after {
+  background-color: #fff;
+  opacity: 0;
+  height: 6px;
+  width: 6px;
+}
+input[type="radio"]:checked::after {
+  opacity: 1;
+}
+
+.main-container {
+  width: min(100%, 420px);
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(255, 255, 255, .05);
+  overflow: auto;
+  position: relative;
+}
+
+.main-container::after {
+  content: '';
+  width: min(100%, 420px);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  backdrop-filter: blur(3px);
+}
+
+.heading-title {
+  width: min(100%, 420px);
+  padding: 5px 20px;
+  position: fixed;
+  top: 0;
+  left: calc((100% - 420px)/2);
+}
+
+.mountain-bg {
+  width: 100%;
+  height: 100vh;
+  background: url(/img/mountain.webp) center / cover no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mountain-bg::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-container .btn-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 10px;
+  margin-top: 10px;
+}
+
+.tweet-container {
+  width: calc(100% - 32px);
+  margin: auto;
+  padding-top: 68px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-container .btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  padding: 3px 6px;
+  background-color: rgba(255, 255, 255, .2);
+  border: solid 1px rgba(255, 255, 255, .4);
+  border-radius: 5px;
+  transition: background-color 200ms ease;
+  cursor: pointer;
+}
+
+.main-container .btn.delete:hover {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+.main-container .btn.update:hover {
+  background-color: rgba(0, 255, 0, .3);
+}
+
+.main-container .btn.send {
+  height: 22px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  margin: auto;
+}
+
+.main-container .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px 0;
+}
+
+.main-container .item {
+  width: 100%;
+  text-align: left;
+  cursor: default;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, .1  );
+  border-radius: 12px;
+  transition: background-color 300ms ease;
+}
+
+.main-container .item:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.input-container {
+  width: min(100%, 420px);
+  padding: 15px 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #22363A;
+}
+
+.main-container .input-wrap {
+  height: 50px;
+}
+
+.main-container .input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  appearance: none;
+  background-color: rgba(255, 255, 255, .2);
+  border: solid 1px rgba(255, 255, 255, .6);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.main-container .input.textarea {
+  resize: none;
+  height: 50px;
+  padding: 10px;
+}
+
+
+.main-container .input:autofill {
+  background-image: none !important;
+  background-color: rgba(255, 255, 255, .3);
+  border: solid 1px rgba(255, 255, 255, .6);
+  box-shadow: 0 0 0 1000px white inset;
+}
+
+.main-container .input:-webkit-autofill {
+  background-image: none !important;
+  background-color: rgba(255, 255, 255, .1);
+  border: solid 1px rgba(255, 255, 255, .6);
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, .1) inset;
+  color: #fff;
+  animation-name: onAutoFillStart;
+  transition: background-color 5000s ease-in-out 0s,
+  color 5000s ease-in-out 0s;
+}
+
+.main-container .input:focus-visible {
+  border: solid 1px #fff;
+  outline: none;
+}
+
+.main-container .input::placeholder {
+  color: rgba(255, 255, 255, .6);
+}
+
+
+
+
+
+

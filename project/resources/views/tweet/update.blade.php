@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>つぶやきアプリ</title>
+  <title>Fly Tweet</title>
 </head>
 <body>
-  <h1>つぶやきアプリ</h1>
+  <h1>Fly Tweet</h1>
   <div>
     <a href="{{ route('tweet.index') }}">戻る</a>
     <p>投稿フォーム</p>
@@ -14,7 +14,7 @@
       <p>{{ session('feedback.success') }}</p>
     @endif
     <form action="{{ route('tweet.update.put', ['tweetId' => $tweet->id]) }}" method="post">
-      @method('PUT')
+      @method('put')
       @csrf
       <label for="tweet-content">つぶやき</label>
       <span>140文字まで</span>
