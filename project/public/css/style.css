@@ -201,6 +201,12 @@ input[type="radio"]:checked::after {
   padding: 10px;
 }
 
+.main-container .input.textarea-update {
+  resize: none;
+  height: 120px;
+  padding: 10px;
+}
+
 
 .main-container .input:autofill {
   background-image: none !important;
@@ -227,6 +233,32 @@ input[type="radio"]:checked::after {
 
 .main-container .input::placeholder {
   color: rgba(255, 255, 255, .6);
+}
+
+/* -----------------
+        update
+------------------ */
+.update-container {
+  width: calc(100% - 36px);
+  margin: 68px auto 0;
+}
+
+.update-container .btn.update {
+  margin: 0 0 5px auto;
+}
+
+.update-container .btn.back {
+  font-size: 16px;
+  width: min(calc(100% - 40px), 380px);
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 
