@@ -21,6 +21,11 @@ class CreateRequest extends FormRequest
         ];
     }
 
+    //Requestクラスのuser関数で今自分がログインしているユーザーが取得できる
+    public function userUd(): int {
+        return $this->user()->id;
+    }
+
     public function tweet(): string
     {
         return $this->input('tweet');

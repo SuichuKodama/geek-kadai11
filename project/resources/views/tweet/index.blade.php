@@ -28,6 +28,7 @@
         </li>
       </details>
       @endforeach  
+      @auth
       <div class="input-container">
         <form class="input-wrap" action="{{ route('tweet.create') }}" method="post">
           @csrf
@@ -38,6 +39,7 @@
           <button class="btn send" type="submit">投稿</button>
         </form> 
       </div>
+      @endauth
     </div>
   </main>
 </body>
